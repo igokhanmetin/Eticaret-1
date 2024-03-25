@@ -2029,19 +2029,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Onur\\.nuget\\packages\\": {}
+    "C:\\Users\\UY1-07\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Onur\\source\\repos-aralık\\Eticaret.Panel\\Eticaret.Panel\\Eticaret.Panel.csproj",
+      "projectUniqueName": "C:\\Users\\UY1-07\\Desktop\\Eticaret\\Eticaret.Panel\\Eticaret.Panel.csproj",
       "projectName": "Eticaret.Panel",
-      "projectPath": "C:\\Users\\Onur\\source\\repos-aralık\\Eticaret.Panel\\Eticaret.Panel\\Eticaret.Panel.csproj",
-      "packagesPath": "C:\\Users\\Onur\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Onur\\source\\repos-aralık\\Eticaret.Panel\\Eticaret.Panel\\obj\\",
+      "projectPath": "C:\\Users\\UY1-07\\Desktop\\Eticaret\\Eticaret.Panel\\Eticaret.Panel.csproj",
+      "packagesPath": "C:\\Users\\UY1-07\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\UY1-07\\Desktop\\Eticaret\\Eticaret.Panel\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Onur\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\UY1-07\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2049,15 +2049,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Onur\\source\\repos-aralık\\Eticaret.Panel\\Eticaret.Model\\Eticaret.Model.csproj": {
-              "projectPath": "C:\\Users\\Onur\\source\\repos-aralık\\Eticaret.Panel\\Eticaret.Model\\Eticaret.Model.csproj"
+            "C:\\Users\\UY1-07\\Desktop\\Eticaret\\Eticaret.Model\\Eticaret.Model.csproj": {
+              "projectPath": "C:\\Users\\UY1-07\\Desktop\\Eticaret\\Eticaret.Model\\Eticaret.Model.csproj"
             }
           }
         }
@@ -2106,7 +2105,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

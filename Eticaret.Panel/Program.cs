@@ -9,10 +9,11 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<MainDatabaseContext>(options =>
 {
-    options.UseSqlServer("Server=DESKTOP-UQD4ET0; Database=BiMilyoncu; TrustServerCertificate=True; Trusted_Connection=True;");
+    options.UseSqlServer("Server=UY1-07\\SQLEXPRESS; Database=BiMilyoncu; TrustServerCertificate=True; Trusted_Connection=True;");
 }, ServiceLifetime.Scoped);
 
 builder.Services.AddScoped<IKategoriService, KategoriService>();
+builder.Services.AddScoped<IUrunService, UrunService>();
 
 var app = builder.Build();
 

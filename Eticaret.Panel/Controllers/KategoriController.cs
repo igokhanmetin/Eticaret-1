@@ -33,5 +33,40 @@ namespace Eticaret.Panel.Controllers
             bool sonuc = await _kategoriService.InsertAsync(model);
             return RedirectToAction("Index", "Kategori");
         }
+
+        [HttpGet, Route("duzenle/{id}")] // localhost/kategori/duzenle/KFHG
+        public async Task<ViewResult> Duzenle(Guid id)
+        {
+            Kategori kategori = await _kategoriService.GetAsync(id);
+            return View(kategori);
+        }
+
+        [HttpPost, Route("guncelle")]
+        public async Task<ActionResult> Guncelle(Kategori model)
+        {
+            bool sonuc = await _kategoriService.UpdateAsync(model);
+            return RedirectToAction("Index", "Kategori");
+        }
+
+        [HttpGet, Route("sil/{id}")]
+        public async Task<ActionResult> Sil(Guid id)
+        {
+            bool sonuc = await _kategoriService.DeleteAsync(id);
+            return RedirectToAction("Index", "Kategori");
+        }
+
+        [HttpGet, Route("aktifleştir/{id}")]
+        public async Task<ActionResult> Aktiflestir(Guid id)
+        {
+            bool sonuc = await _kategoriService.AktiflestirAsync(id);
+            return RedirectToAction("Index", "Kategori");
+        }
+
+        [HttpGet, Route("pasifleştir/{id}")]
+        public async Task<ActionResult> Pasiflestir(Guid id)
+        {
+            bool sonuc = await _kategoriService.PasiflestirAsync(id);
+            return RedirectToAction("Index", "Kategori");
+        }
     }
 }
