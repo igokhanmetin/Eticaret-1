@@ -1,7 +1,6 @@
 ﻿using Eticaret.Model;
 using Eticaret.Panel.DatabaseContexts;
 using Microsoft.EntityFrameworkCore;
-using System;
 
 namespace Eticaret.Panel.Services
 {
@@ -23,7 +22,7 @@ namespace Eticaret.Panel.Services
 
         public async Task<List<Kategori>> GetAllAsync()
         {
-            // SELECT * FROM Kategori
+            // SELECT * FROM Kategori WHERE Durum != -1
             List<Kategori> kategoriler = await _context.Kategori.Where(m => m.Durum != -1).ToListAsync();
             return kategoriler;
         }
@@ -90,21 +89,20 @@ namespace Eticaret.Panel.Services
             }
         }
 
-            public async Task<bool> PasiflestirAsync(Guid id)
+        public async Task<bool> PasiflestirAsync(Guid id)
+        {
+            try
             {
-                try
-                {
-                    Kategori kategori = await GetAsync(id);
-                    kategori.Durum = 0;
-                    bool sonuc = await UpdateAsync(kategori);
-                    return sonuc;
-                }
-                catch (Exception)
-                {
-                    return false;
-                }
-
+                Kategori kategori = await GetAsync(id);
+                kategori.Durum = 0;
+                bool sonuc = await UpdateAsync(kategori);
+                return sonuc;
             }
-
+            catch (Exception)
+            {
+                return false;
+            }
         }
+
     }
+}

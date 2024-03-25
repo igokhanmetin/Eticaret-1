@@ -12,9 +12,10 @@ namespace Eticaret.Panel.Services
         {
             _context = context;
         }
+
         public async Task<Urun> GetAsync(Guid id)
         {
-            Urun urun = await _context.Urun.Where(m => m.Id ==id).FirstAsync();
+            Urun urun = await _context.Urun.Where(m => m.Id == id).FirstAsync();
             return urun;
         }
     }
